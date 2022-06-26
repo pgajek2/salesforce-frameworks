@@ -24,4 +24,22 @@ Code Architecture is following *Open/Close* and *Single Responsibility Principle
     System.debug(Consts.OPPORTUNITY.TYPE.EXISTING_CUSTOMER_DOWNGRADE); // 'Existing Customer - Downgrade'
 ```
 
+### unit-of-work
+
+The framework that allows you to mange apex DML statements.
+
+**How it works?**
+
+Unit Of Work is Salesforce alternative of inline DMLs statement. Framework allows to process database operation in ordered way.
+
+**How ti use?**
+
+```java
+    SObjectUnitOfWork uwo = new SObjectUnitOfWork();
+
+    uow.registerNew(new Account(Name = 'Created by UOW'));
+
+    uow.commitWork();
+```
+
 ## Lightning Web Components (LWC)
