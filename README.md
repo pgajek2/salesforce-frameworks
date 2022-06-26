@@ -32,7 +32,7 @@ The framework that allows you to mange apex DML statements.
 
 Unit Of Work is Salesforce alternative of inline DMLs statement. Framework allows to process database operation in ordered way.
 
-**How ti use?**
+**How to use?**
 
 ```java
     SObjectUnitOfWork uwo = new SObjectUnitOfWork();
